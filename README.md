@@ -26,6 +26,8 @@ This project is a Linux-based bash script that monitors various system parameter
 - **Last login**: Displays the username and time of the last login.
 - **LCD control**: Automatically turns the LCD off between 22:00 and 08:00 and back on during the day.
 
+You can use the main loop at the end of the script to comment out or change order of prints you wish to see on the lcd.
+
 ## Installation
 
 1. **Dependencies**: Ensure the following packages are installed:
