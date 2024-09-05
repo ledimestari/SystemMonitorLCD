@@ -75,4 +75,8 @@ You can use the main loop at the end of the script to comment out or change orde
    Other option is to set 777 permission on the `/dev/ttyUSB0` port but I don't know how bad of a idea that might be.
 
    After your user have the permissions you just run the script.
+
+## Contributions
+
+Feel free to fork the project, make improvements, and submit pull requests. If you find any issues or have feature requests, please open an issue on the repository.
    
