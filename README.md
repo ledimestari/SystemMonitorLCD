@@ -6,6 +6,8 @@ This project is a Linux-based bash script that monitors various system parameter
 
 ## Features
 
+### LCD screen
+
 - **Display uptime**: Shows how long the system has been running.
 - **Disk usage**: Displays the current disk usage.
 - **Load averages**: Shows system load averages over 1, 5, and 15 minutes.
@@ -25,6 +27,31 @@ This project is a Linux-based bash script that monitors various system parameter
 - **Open files**: Displays the number of open file descriptors.
 - **Last login**: Displays the username and time of the last login.
 - **LCD control**: Automatically turns the LCD off between 22:00 and 08:00 and back on during the day.
+
+### LED light
+
+- **LED Strip Control**:
+  - **Static Color**: Set the color of a WS2812B LED strip using RGB values in the format `ledRRRGGGBBB/static`.
+  - **Blinking**: Make the LED strip blink in a specified color with the command `ledRRRGGGBBB/blink`.
+  - **Rainbow Mode**: Cycle through a rainbow effect with the command `led/rainbow`.
+  - **Gradient**: Create a gradient from green to red based on a percentage value from 0 to 100 using `led<percentage>/gradient`.
+ 
+  **Example**:
+  Set the led light to blink as red
+  ```bash
+  echo "led255000000/blink" > /dev/ttyUSB0
+
+### Buzzer
+
+- **Buzzer Control**:
+  - **Short Beep**: Activate a short beep with the command `beep/short`.
+  - **Long Beep**: Activate a long beep with the command `beep/long`.
+  - **Rapid Beep**: Activate a series of five short beeps with the command `beep/rapid`.
+
+  **Example**:
+  Make a short beep
+  ```bash
+  echo "beep/short" > /dev/ttyUSB0
 
 You can use the main loop at the end of the script to comment out or change order of prints you wish to see on the lcd.
 
