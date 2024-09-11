@@ -2,7 +2,7 @@
 
 This project is a Linux-based bash script that monitors various system parameters such as uptime, disk usage, load averages, CPU temperature, memory usage, and more. The output is sent to a serial-connected LCD screen via `/dev/ttyUSB0`. Additionally, the script can turn the LCD display on or off based on the current time.
 
-3D-printed files can be found here: https://www.thingiverse.com/thing:6762931
+3D-printed files and a BOM can be found here: https://www.thingiverse.com/thing:6762931
 
 ![collection2](https://github.com/user-attachments/assets/f2f8d4cf-adaa-42a5-a3c6-820cc04f1597)
 
