@@ -2,7 +2,9 @@
 
 This project is a Linux-based bash script that monitors various system parameters such as uptime, disk usage, load averages, CPU temperature, memory usage, and more. The output is sent to a serial-connected LCD screen via `/dev/ttyUSB0`. Additionally, the script can turn the LCD display on or off based on the current time.
 
-![collection](https://github.com/user-attachments/assets/0c04c9a8-9d8c-4b3d-b1d1-36ec4382f37c)
+3D-printed files can be found here: https://www.thingiverse.com/thing:6762931
+
+![collection2](https://github.com/user-attachments/assets/f2f8d4cf-adaa-42a5-a3c6-820cc04f1597)
 
 ## Features
 
@@ -36,6 +38,8 @@ This project is a Linux-based bash script that monitors various system parameter
   - **Rainbow Mode**: Cycle through a rainbow effect with the command `led/rainbow`.
   - **Gradient**: Create a gradient from green to red based on a percentage value from 0 to 100 using `led<percentage>/gradient`.
  
+  By default the led light goes from green to red, based on cpu usage. Updates every time the screen updates.
+ 
   **Example**:
   Set the led light to blink as red
   ```bash
@@ -47,6 +51,8 @@ This project is a Linux-based bash script that monitors various system parameter
   - **Short Beep**: Activate a short beep with the command `beep/short`.
   - **Long Beep**: Activate a long beep with the command `beep/long`.
   - **Rapid Beep**: Activate a series of five short beeps with the command `beep/rapid`.
+ 
+  Not used by default.
 
   **Example**:
   Make a short beep
